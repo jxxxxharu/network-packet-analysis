@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>동영상 서버</title>
+    </head>
+    <body>
+        <h1>동영상 서버</h1>
+        <video width="800" height="600" controls>
+            <source
+                src="{{ url_for('video', filename='video01.mp4') }}"
+                type="video/mp4"
+            />
+        </video>
+    </body>
+</html>
